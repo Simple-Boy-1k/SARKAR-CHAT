@@ -1,0 +1,50 @@
+{
+  "name": "Deep Emotions AI Bot",
+  "description": "A modular, high-performance Telegram AI companion bot powered by Google Gemini and Python-Telegram-Bot.",
+  "repository": "https://github.com/Simple-Boy-1k/SARKAR",
+  "logo": "https://raw.githubusercontent.com/AashishTechs/Deep-Emotion/main/Welcome.jpg",
+  "keywords": ["python", "telegram", "bot", "gemini", "ai", "deep-emotions"],
+  "stack": "heroku-24",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "value": "",
+      "required": true
+    },
+    "GEMINI_API_KEY": {
+      "description": "Your Google Gemini API Key",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID (Numeric)",
+      "value": "",
+      "required": false
+    },
+    "OWNER_USERNAME": {
+      "description": "Your Telegram Username without @",
+      "value": "",
+      "required": false
+    },
+    "SUPPORT_CHAT_URL": {
+      "description": "Support Chat Group Invite Link",
+      "value": "",
+      "required": false
+    },
+    "SUPPORT_CHANNEL_URL": {
+      "description": "Support Channel Link",
+      "value": "",
+      "required": false
+    },
+    "UPDATES_CHANNEL_URL": {
+      "description": "Updates Channel Link",
+      "value": "",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
